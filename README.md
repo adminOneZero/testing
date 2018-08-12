@@ -1,1 +1,2 @@
-# testing \n simple laravel project
+# testing
+simple laravel project
