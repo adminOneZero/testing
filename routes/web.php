@@ -18,9 +18,14 @@ Route::get('/', function(){
 });
 
 Auth::routes();
-
+Route::get('/profile','profilesController@profile');
+Route::post('/profile','UserProfileController@update_avatar');
 Route::get('/task','TasksController@add');
 Route::post('/task','TasksController@create');
 
 Route::get('/task/{task}','TasksController@edit');
 Route::post('/task/{task}','TasksController@update');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
