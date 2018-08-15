@@ -50,7 +50,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="display:inline;font-size:20px">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-                                <img src="/uploads/avatars/{{ $user->avatar }}" style="width:40px; height:40px; float:left; border-radius:50%; ">
+                                <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width:40px; height:40px; float:left; border-radius:50%; ">
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
