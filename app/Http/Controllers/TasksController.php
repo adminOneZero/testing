@@ -7,7 +7,7 @@ use Auth;
 use App\Task;
 
 class TasksController extends Controller
-{  
+{
   public function __construct()
 {
     $this->middleware('auth');
@@ -33,6 +33,7 @@ class TasksController extends Controller
 
     	if (Auth::check() && Auth::user()->id == $task->user_id)
         {
+
                 return view('edit', compact('task'));
         }
         else {

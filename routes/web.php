@@ -19,7 +19,8 @@ Route::get('/', function(){
 
 Auth::routes();
 Route::get('/profile','profilesController@profile');
-Route::post('/profile','UserProfileController@update_avatar');
+Route::post('/profile','UserProfileController@update_profile');
+
 Route::get('/task','TasksController@add');
 Route::post('/task','TasksController@create');
 
